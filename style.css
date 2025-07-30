@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #232526 0%, #414345 40%, #6a11cb 100%);
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 1px;
+    
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#chat-container {
+    width: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 20px auto 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#chat {
+    height: 350px;
+    padding: 10px;
+    overflow-y: auto;
+    background: #fff; 
+}
+
+#input-area {
+    display: flex;
+    padding: 10px;
+    background: #fafafa;
+    border-top: none; 
+    box-shadow: none;
+}
+
+#userInput {
+    flex: 1;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+#sendBtn {
+    padding: 8px 18px;
+    border-radius: 4px;
+    border: none;
+    background: #0078d7;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#sendBtn:hover {
+    background: #005fa3;
+}
+
+.message {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.user .text {
+    background: #0078d7;
+    color: #fff;
+    align-self: flex-end;
+    padding: 8px 14px;
+    border-radius: 16px 16px 0 16px;
+    max-width: 70%;
+}
+
+.bot .text {
+    background: #e5e5e5;
+    color: #333;
+    align-self: flex-start;
+    padding: 8px 14px;
+    border-radius: 16px 16px 16px 0;
+    max-width: 70%;
+}
